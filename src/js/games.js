@@ -1,6 +1,6 @@
 /* 2C = Two of Clubs, 2D = Two of Diamonds, 2H = Two of Hearts, 2S = Two of Spades */
 
-export const modulo = (() => {
+const modulo = (() => {
   'use strict';
 
   let deck = [];
@@ -86,7 +86,7 @@ export const modulo = (() => {
 //rear Carta 
 const crearCarta = (carta, turno ) =>{
     const imgCarta = document.createElement("img");
-      imgCarta.src = `src/assets/cartas/${carta}.png`; //3H, JD
+      imgCarta.src = `assets/cartas/${carta}.png`; //3H, JD
       imgCarta.classList.add("carta"); // poner la clase
       divCartasJugadores[turno].append(imgCarta);
       //divCartasComputadora.append(imgCarta);
