@@ -1,6 +1,5 @@
-# webpack-configuracion
-PLANTILLAS WEBPACK PARA TRABAJAR EN PRODUCCION Y DESARROLLO
-
+# Proyecto en JS Vanilla
+BlackJack 2.0
 
 ### Instalar Modulos de Node
 ```
