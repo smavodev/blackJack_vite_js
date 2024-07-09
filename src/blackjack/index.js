@@ -39,18 +39,19 @@ import { crearDeck, pedirCarta, valorCarta, turnoComputadora, crearCartaHTML } f
      puntosJugador = puntosJugador + valorCarta( carta );
      puntosHTML[0].innerText = puntosJugador;
      
-     // <img class="carta" src="assets/cartas/2C.png">
      const imgCarta = crearCartaHTML( carta );
      divCartasJugador.append( imgCarta );
  
      if ( puntosJugador > 21 ) {
-         console.warn('Lo siento mucho, perdiste');
+        //  console.warn('Lo siento mucho, perdiste');
+        swal("Lo siento mucho, perdiste", " ", "error");
          btnPedir.disabled   = true;
          btnDetener.disabled = true;
          turnoComputadora( puntosJugador, puntosHTML[1], divCartasComputadora, deck );
  
      } else if ( puntosJugador === 21 ) {
-         console.warn('21, genial!');
+        //  console.warn('21, genial!');
+        swal("21, Usted ha ganado!", " ", "success");
          btnPedir.disabled   = true;
          btnDetener.disabled = true;
          turnoComputadora( puntosJugador, puntosHTML[1], divCartasComputadora, deck );
